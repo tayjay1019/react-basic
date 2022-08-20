@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 
 class Country extends Component {
-    state = {
-        name: 'USA',
-        count: 0,
-    }
-    handleClick = () => {
-        this.oldCount = this.state.count;
-        this.newCount = this.oldCount + 1;
-        this.setState({ count: this.newCount})
-    }
     render() {
+        const { onClick, country } = this.props;
         return (
             <div className='Country'>
-                 <div>   {this.state.name}  </div>
-                 <div>Gold medals: {this.state.count}</div> <button onClick={ this.handleClick }> + </button>
+                 <div>   {country.name}  </div>
+                 <div>Gold medals: {country.count} <button onClick={ () => onClick(country.id) }> + </button></div> 
             </div>
         )
     }
