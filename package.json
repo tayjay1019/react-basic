@@ -1,7 +1,7 @@
 {
   "name": "react-basic",
   "version": "0.1.0",
-  "homepage": "https://github.io/tayjay1019/react-basic.git",
+  "homepage": "https://tayjay1019.github.io/react-basic",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "react-basic -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
